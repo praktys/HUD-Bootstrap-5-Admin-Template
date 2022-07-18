@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from seantheme.com/hud/ui_typography.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jul 2022 09:38:29 GMT -->
+<head>
+<meta charset="utf-8" />
+<title>HUD | Typography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+
+<link href="assets/css/vendor.min.css" rel="stylesheet" />
+<link href="assets/css/app.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="app" class="app">
+
+<div id="header" class="app-header">
+
+<div class="desktop-toggler">
+<button type="button" class="menu-toggler" data-toggle-class="app-sidebar-collapsed" data-dismiss-class="app-sidebar-toggled" data-toggle-target=".app">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</button>
+</div>
+
+
+<div class="mobile-toggler">
+<button type="button" class="menu-toggler" data-toggle-class="app-sidebar-mobile-toggled" data-toggle-target=".app">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</button>
+</div>
+
+
+<div class="brand">
+<a href="index-2.html" class="brand-logo">
+<span class="brand-img">
+<span class="brand-img-text text-theme">H</span>
+</span>
+<span class="brand-text">HUD ADMIN</span>
+</a>
+</div>
+
+
+<div class="menu">
+<div class="menu-item dropdown">
+<a href="#" data-toggle-class="app-header-menu-search-toggled" data-toggle-target=".app" class="menu-link">
+<div class="menu-icon"><i class="bi bi-search nav-icon"></i></div>
+</a>
+</div>
+<div class="menu-item dropdown dropdown-mobile-full">
+<a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+<div class="menu-icon"><i class="bi bi-grid-3x3-gap nav-icon"></i></div>
+</a>
+<div class="dropdown-menu fade dropdown-menu-end w-300px text-center p-0 mt-1">
+<div class="row row-grid gx-0">
+<div class="col-4">
+<a href="email_inbox.html" class="dropdown-item text-decoration-none p-3 bg-none">
+<div class="position-relative">
+<i class="bi bi-circle-fill position-absolute text-theme top-0 mt-n2 me-n2 fs-6px d-block text-center w-100"></i>
+<i class="bi bi-envelope h2 opacity-5 d-block my-1"></i>
+</div>
+<div class="fw-500 fs-10px text-white">INBOX</div>
+</a>
+</div>
+<div class="col-4">
+<a href="pos_customer_order.html" target="_blank" class="dropdown-item text-decoration-none p-3 bg-none">
+<div><i class="bi bi-hdd-network h2 opacity-5 d-block my-1"></i></div>
+<div class="fw-500 fs-10px text-white">POS SYSTEM</div>
+</a>
+</div>
+<div class="col-4">
+<a href="calendar.html" class="dropdown-item text-decoration-none p-3 bg-none">
+<div><i class="bi bi-calendar4 h2 opacity-5 d-block my-1"></i></div>
+<div class="fw-500 fs-10px text-white">CALENDAR</div>
+</a>
+</div>
+</div>
+<div class="row row-grid gx-0">
+<div class="col-4">
+<a href="helper.html" class="dropdown-item text-decoration-none p-3 bg-none">
+<div><i class="bi bi-terminal h2 opacity-5 d-block my-1"></i></div>
+<div class="fw-500 fs-10px text-white">HELPER</div>
+</a>
+</div>
+<div class="col-4">
+<a href="settings.html" class="dropdown-item text-decoration-none p-3 bg-none">
+<div class="position-relative">
+<i class="bi bi-circle-fill position-absolute text-theme top-0 mt-n2 me-n2 fs-6px d-block text-center w-100"></i>
+<i class="bi bi-sliders h2 opacity-5 d-block my-1"></i>
+</div>
+<div class="fw-500 fs-10px text-white">SETTINGS</div>
+</a>
+</div>
+<div class="col-4">
+<a href="widgets.html" class="dropdown-item text-decoration-none p-3 bg-none">
+<div><i class="bi bi-collection-play h2 opacity-5 d-block my-1"></i></div>
+<div class="fw-500 fs-10px text-white">WIDGETS</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-item dropdown dropdown-mobile-full">
+<a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+<div class="menu-icon"><i class="bi bi-bell nav-icon"></i></div>
+<div class="menu-badge bg-theme"></div>
+</a>
+<div class="dropdown-menu dropdown-menu-end mt-1 w-300px fs-11px pt-1">
+<h6 class="dropdown-header fs-10px mb-1">NOTIFICATIONS</h6>
+<div class="dropdown-divider mt-1"></div>
+<a href="#" class="d-flex align-items-center py-10px dropdown-item text-wrap">
+<div class="fs-20px">
+<i class="bi bi-bag text-theme"></i>
+</div>
+<div class="flex-1 flex-wrap ps-3">
+<div class="mb-1 text-white">NEW ORDER RECEIVED ($1,299)</div>
+<div class="small">JUST NOW</div>
+</div>
+<div class="ps-2 fs-16px">
+<i class="bi bi-chevron-right"></i>
+</div>
+</a>
+<a href="#" class="d-flex align-items-center py-10px dropdown-item text-wrap">
+<div class="fs-20px w-20px">
+<i class="bi bi-person-circle text-theme"></i>
+</div>
+<div class="flex-1 flex-wrap ps-3">
+<div class="mb-1 text-white">3 NEW ACCOUNT CREATED</div>
+<div class="small">2 MINUTES AGO</div>
+</div>
+<div class="ps-2 fs-16px">
+<i class="bi bi-chevron-right"></i>
+</div>
+</a>
+<a href="#" class="d-flex align-items-center py-10px dropdown-item text-wrap">
+<div class="fs-20px w-20px">
+<i class="bi bi-gear text-theme"></i>
+</div>
+<div class="flex-1 flex-wrap ps-3">
+<div class="mb-1 text-white">SETUP COMPLETED</div>
+<div class="small">3 MINUTES AGO</div>
+</div>
+<div class="ps-2 fs-16px">
+<i class="bi bi-chevron-right"></i>
+</div>
+</a>
+<a href="#" class="d-flex align-items-center py-10px dropdown-item text-wrap">
+<div class="fs-20px w-20px">
+<i class="bi bi-grid text-theme"></i>
+</div>
+<div class="flex-1 flex-wrap ps-3">
+<div class="mb-1 text-white">WIDGET INSTALLATION DONE</div>
+<div class="small">5 MINUTES AGO</div>
+</div>
+<div class="ps-2 fs-16px">
+<i class="bi bi-chevron-right"></i>
+</div>
+</a>
+<a href="#" class="d-flex align-items-center py-10px dropdown-item text-wrap">
+<div class="fs-20px w-20px">
+<i class="bi bi-credit-card text-theme"></i>
+</div>
+<div class="flex-1 flex-wrap ps-3">
+<div class="mb-1 text-white">PAYMENT METHOD ENABLED</div>
+<div class="small">10 MINUTES AGO</div>
+</div>
+<div class="ps-2 fs-16px">
+<i class="bi bi-chevron-right"></i>
+</div>
+</a>
+<hr class="bg-white-transparent-5 mb-0 mt-2" />
+<div class="py-10px mb-n2 text-center">
+<a href="#" class="text-decoration-none fw-bold">SEE ALL</a>
+</div>
+</div>
+</div>
+<div class="menu-item dropdown dropdown-mobile-full">
+<a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+<div class="menu-img online">
+<img src="assets/img/user/profile.jpg" alt="Profile" height="60" />
+</div>
+<div class="menu-text d-sm-block d-none"><span class="__cf_email__" data-cfemail="c4b1b7a1b6aaa5a9a184a5a7a7abb1aab0eaa7aba9">[email&#160;protected]</span></div>
+</a>
+<div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">
+<a class="dropdown-item d-flex align-items-center" href="profile.html">PROFILE <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i></a>
+<a class="dropdown-item d-flex align-items-center" href="email_inbox.html">INBOX <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i></a>
+<a class="dropdown-item d-flex align-items-center" href="calendar.html">CALENDAR <i class="bi bi-calendar ms-auto text-theme fs-16px my-n1"></i></a>
+<a class="dropdown-item d-flex align-items-center" href="settings.html">SETTINGS <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i></a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item d-flex align-items-center" href="page_login.html">LOGOUT <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>
+</div>
+</div>
+</div>
+
+
+<form class="menu-search" method="POST" name="header_search_form">
+<div class="menu-search-container">
+<div class="menu-search-icon"><i class="bi bi-search"></i></div>
+<div class="menu-search-input">
+<input type="text" class="form-control form-control-lg" placeholder="Search menu..." />
+</div>
+<div class="menu-search-icon">
+<a href="#" data-toggle-class="app-header-menu-search-toggled" data-toggle-target=".app"><i class="bi bi-x-lg"></i></a>
+</div>
+</div>
+</form>
+
+</div>
+
+
+<div id="sidebar" class="app-sidebar">
+
+<div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+
+<div class="menu">
+<div class="menu-header">Navigation</div>
+<div class="menu-item">
+<a href="index-2.html" class="menu-link">
+<span class="menu-icon"><i class="bi bi-cpu"></i></span>
+<span class="menu-text">Dashboard</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="analytics.html" class="menu-link">
+<span class="menu-icon"><i class="bi bi-bar-chart"></i></span>
+<span class="menu-text">Analytics</span>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="#" class="menu-link">
+<span class="menu-icon">
+<i class="bi bi-envelope"></i>
+</span>
+<span class="menu-text">Email</span>
+<span class="menu-caret"><b class="caret"></b></span>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="email_inbox.html" class="menu-link">
+<span class="menu-text">Inbox</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_compose.html" class="menu-link">
+<span class="menu-text">Compose</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="email_detail.html" class="menu-link">
+<span class="menu-text">Detail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-header">Components</div>
+<div class="menu-item">
+<a href="widgets.html" class="menu-link">
+<span class="menu-icon"><i class="bi bi-columns-gap"></i></span>
+<span class="menu-text">Widgets</span>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="javascript:;" class="menu-link">
+<div class="menu-icon">
+<i class="bi bi-bag-check"></i>
+<span class="w-5px h-5px rounded-3 bg-theme position-absolute top-0 end-0 mt-3px me-3px"></span>
+</div>
+<div class="menu-text d-flex align-items-center">POS System</div>
+<span class="menu-caret"><b class="caret"></b></span>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="pos_customer_order.html" target="_blank" class="menu-link">
+<div class="menu-text">Customer Order</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_kitchen_order.html" target="_blank" class="menu-link">
+<div class="menu-text">Kitchen Order</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_counter_checkout.html" target="_blank" class="menu-link">
+<div class="menu-text">Counter Checkout</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_table_booking.html" target="_blank" class="menu-link">
+<div class="menu-text">Table Booking</div>
+</a>
+</div>
+<div class="menu-item">
+<a href="pos_menu_stock.html" target="_blank" class="menu-link">
+<div class="menu-text">Menu Stock</div>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub active">
+<a href="#" class="menu-link">
+<span class="menu-icon"><i class="bi bi-controller"></i></span>
+<span class="menu-text">UI Kits</span>
+<span class="menu-caret"><b class="caret"></b></span>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="ui_bootstrap.html" class="menu-link">
+<span class="menu-text">Bootstrap</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_buttons.html" class="menu-link">
+<span class="menu-text">Buttons</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_card.html" class="menu-link">
+<span class="menu-text">Card</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_icons.html" class="menu-link">
+<span class="menu-text">Icons</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_modal_notification.html" class="menu-link">
+<span class="menu-text">Modal & Notification</span>
+</a>
+</div>
+<div class="menu-item active">
+<a href="ui_typography.html" class="menu-link">
+<span class="menu-text">Typography</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="ui_tabs_accordions.html" class="menu-link">
+<span class="menu-text">Tabs & Accordions</span>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="#" class="menu-link">
+<span class="menu-icon"><i class="bi bi-pen"></i></span>
+<span class="menu-text">Forms</span>
+<span class="menu-caret"><b class="caret"></b></span>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="form_elements.html" class="menu-link">
+<span class="menu-text">Form Elements</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_plugins.html" class="menu-link">
+<span class="menu-text">Form Plugins</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="form_wizards.html" class="menu-link">
+<span class="menu-text">Wizards</span>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="#" class="menu-link">
+<span class="menu-icon"><i class="bi bi-grid-3x3"></i></span>
+<span class="menu-text">Tables</span>
+<span class="menu-caret"><b class="caret"></b></span>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="table_elements.html" class="menu-link">
+<span class="menu-text">Table Elements</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="table_plugins.html" class="menu-link">
+<span class="menu-text">Table Plugins</span>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="#" class="menu-link">
+<span class="menu-icon"><i class="bi bi-pie-chart"></i></span>
+<span class="menu-text">Charts</span>
+<span class="menu-caret"><b class="caret"></b></span>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="chart_js.html" class="menu-link">
+<span class="menu-text">Chart.js</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="chart_apex.html" class="menu-link">
+<span class="menu-text">Apexcharts.js</span>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item">
+<a href="map.html" class="menu-link">
+<span class="menu-icon"><i class="bi bi-compass"></i></span>
+<span class="menu-text">Map</span>
+</a>
+</div>
+<div class="menu-item has-sub">
+<a href="#" class="menu-link">
+<span class="menu-icon"><i class="bi bi-layout-sidebar"></i></span>
+<span class="menu-text">Layout</span>
+<span class="menu-caret"><b class="caret"></b></span>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="layout_starter.html" class="menu-link">
+<span class="menu-text">Starter Page</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="layout_fixed_footer.html" class="menu-link">
+<span class="menu-text">Fixed Footer</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="layout_full_height.html" class="menu-link">
+<span class="menu-text">Full Height</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="layout_full_width.html" class="menu-link">
+<span class="menu-text">Full Width</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="layout_boxed_layout.html" class="menu-link">
+<span class="menu-text">Boxed Layout</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="layout_collapsed_sidebar.html" class="menu-link">
+<span class="menu-text">Collapsed Sidebar</span>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-item has-sub">
+<a href="#" class="menu-link">
+<span class="menu-icon"><i class="bi bi-collection"></i></span>
+<span class="menu-text">Pages</span>
+<span class="menu-caret"><b class="caret"></b></span>
+</a>
+<div class="menu-submenu">
+<div class="menu-item">
+<a href="page_scrum_board.html" class="menu-link">
+<span class="menu-text">Scrum Board</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_products.html" class="menu-link">
+<span class="menu-text">Products</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_orders.html" class="menu-link">
+<span class="menu-text">Orders</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_gallery.html" class="menu-link">
+<span class="menu-text">Gallery</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_search_results.html" class="menu-link">
+<span class="menu-text">Search Results</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_coming_soon.html" class="menu-link">
+<span class="menu-text">Coming Soon Page</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_404_error.html" class="menu-link">
+<span class="menu-text">404 Error Page</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_login.html" class="menu-link">
+<span class="menu-text">Login</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="page_register.html" class="menu-link">
+<span class="menu-text">Register</span>
+</a>
+</div>
+</div>
+</div>
+<div class="menu-divider"></div>
+<div class="menu-header">Users</div>
+<div class="menu-item">
+<a href="profile.html" class="menu-link">
+<span class="menu-icon"><i class="bi bi-people"></i></span>
+<span class="menu-text">Profile</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="calendar.html" class="menu-link">
+<span class="menu-icon"><i class="bi bi-calendar4"></i></span>
+<span class="menu-text">Calendar</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="settings.html" class="menu-link">
+<span class="menu-icon"><i class="bi bi-gear"></i></span>
+<span class="menu-text">Settings</span>
+</a>
+</div>
+<div class="menu-item">
+<a href="helper.html" class="menu-link">
+<span class="menu-icon"><i class="bi bi-gem"></i></span>
+<span class="menu-text">Helper</span>
+</a>
+</div>
+</div>
+
+<div class="p-3 px-4 mt-auto">
+<a href="documentation/index.html" target="_blank" class="btn d-block btn-outline-theme">
+<i class="fa fa-code-branch me-2 ms-n2 opacity-5"></i> Documentation
+</a>
+</div>
+</div>
+
+</div>
+
+
+<button class="app-sidebar-mobile-backdrop" data-toggle-target=".app" data-toggle-class="app-sidebar-mobile-toggled"></button>
+
+
+<div id="content" class="app-content">
+
+<div class="container">
+
+<div class="row justify-content-center">
+
+<div class="col-xl-10">
+
+<div class="row">
+
+<div class="col-xl-9">
+<ul class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">UI KITS</a></li>
+<li class="breadcrumb-item active">TYPOGRAPHY</li>
+</ul>
+<h1 class="page-header">
+Typography <small>page header description goes here...</small>
+</h1>
+<hr class="mb-4" />
+
+<div id="headings" class="mb-5">
+<h4>Headings</h4>
+<p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element. Please read the <a href="https://getbootstrap.com/docs/5.1/content/typography/" target="_blank">official Bootstrap documentation</a> for the full list of options.</p>
+<div class="card">
+<div class="card-body">
+<h1>h1. Bootstrap heading</h1>
+<h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading</h6>
+</div>
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+<div class="hljs-container"><pre><code class="xml">&lt;!-- heading tag --&gt;
+&lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt;
+&lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt;
+&lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt;
+&lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt;
+&lt;h5&gt;h5. Bootstrap heading&lt;/h5&gt;
+&lt;h6&gt;h6. Bootstrap heading&lt;/h6&gt;
+
+&lt;!-- heading class --&gt;
+&lt;p class="h1"&gt;h1. Bootstrap heading&lt;/p&gt;
+&lt;p class="h2"&gt;h2. Bootstrap heading&lt;/p&gt;
+&lt;p class="h3"&gt;h3. Bootstrap heading&lt;/p&gt;
+&lt;p class="h4"&gt;h4. Bootstrap heading&lt;/p&gt;
+&lt;p class="h5"&gt;h5. Bootstrap heading&lt;/p&gt;
+&lt;p class="h6"&gt;h6. Bootstrap heading&lt;/p&gt;</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="displayHeadings" class="mb-5">
+<h4>Display headings</h4>
+<p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a display heading—a larger, slightly more opinionated heading style.</p>
+<div class="card">
+<div class="card-body">
+<h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+</div>
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+<div class="hljs-container"><pre><code class="xml">&lt;h1 class="display-1"&gt;Display 1&lt;/h1&gt;
+&lt;h1 class="display-2"&gt;Display 2&lt;/h1&gt;
+&lt;h1 class="display-3"&gt;Display 3&lt;/h1&gt;
+&lt;h1 class="display-4"&gt;Display 4&lt;/h1&gt;</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="lead" class="mb-5">
+<h4>Lead</h4>
+<p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+<div class="card">
+<div class="card-body">
+<p class="lead">
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+</p>
+</div>
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+<div class="hljs-container"><pre><code class="xml">&lt;p class="lead"&gt;
+  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+&lt;/p&gt;</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="inlineTextElements" class="mb-5">
+<h4>Headings</h4>
+<p>Styling for common inline HTML5 elements.</p>
+<div class="card">
+<div class="card-body">
+<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+<p><del>This line of text is meant to be treated as deleted text.</del></p>
+<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+<p><u>This line of text will render as underlined</u></p>
+<p><small>This line of text is meant to be treated as fine print.</small></p>
+<p><strong>This line rendered as bold text.</strong></p>
+<p><em>This line rendered as italicized text.</em></p>
+</div>
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+<div class="hljs-container"><pre><code class="xml">&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="abbreviations" class="mb-5">
+<h4>Abbreviations</h4>
+<p>Stylized implementation of HTML’s <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies. Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
+<div class="card">
+<div class="card-body">
+<p><abbr title="attribute">attr</abbr></p>
+<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+</div>
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+<div class="hljs-container"><pre><code class="xml">&lt;p&gt;&lt;abbr title="attribute"&gt;attr&lt;/abbr&gt;&lt;/p&gt;
+&lt;p&gt;&lt;abbr title="HyperText Markup Language" class="initialism"&gt;HTML&lt;/abbr&gt;&lt;/p&gt;</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="blockquotes" class="mb-5">
+<h4>Blockquotes</h4>
+<p>For quoting blocks of content from another source within your document. Wrap <code>&lt;blockquote class="blockquote"&gt;</code> around any HTML as the quote.</p>
+<div class="card">
+<div class="card-body">
+<figure class="mb-0">
+<blockquote class="blockquote">
+<p>A well-known quote, contained in a blockquote element.</p>
+</blockquote>
+<figcaption class="blockquote-footer mb-0">
+Someone famous in <cite title="Source Title">Source Title</cite>
+</figcaption>
+</figure>
+</div>
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+<div class="hljs-container"><pre><code class="xml">&lt;figure&gt;
+  &lt;blockquote class="blockquote"&gt;
+    &lt;p&gt;A well-known quote, contained in a blockquote element.&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;figcaption class="blockquote-footer"&gt;
+    Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="unstyledList" class="mb-5">
+<h4>Unstyled list</h4>
+<p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). This only applies to immediate children list items, meaning you will need to add the class for any nested lists as well.</p>
+<div class="card">
+<div class="card-body">
+<ul class="list-unstyled">
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Nulla volutpat aliquam velit
+<ul>
+<li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+</ul>
+</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ul>
+</div>
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+<div class="hljs-container"><pre><code class="xml">&lt;ul class="list-unstyled"&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Nulla volutpat aliquam velit
+    &lt;ul&gt;
+      &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+      &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+  &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="inlineList" class="mb-5">
+<h4>Inline list</h4>
+<p>Remove a list’s bullets and apply some light margin with a combination of two classes, <code>.list-inline</code> and <code>.list-inline-item</code>.</p>
+<div class="card">
+<div class="card-body">
+<ul class="list-inline">
+<li class="list-inline-item">Lorem ipsum</li>
+<li class="list-inline-item">Phasellus iaculis</li>
+<li class="list-inline-item">Nulla volutpat</li>
+</ul>
+</div>
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+<div class="hljs-container"><pre><code class="xml">&lt;ul class="list-inline"&gt;
+  &lt;li class="list-inline-item"&gt;Lorem ipsum&lt;/li&gt;
+  &lt;li class="list-inline-item"&gt;Phasellus iaculis&lt;/li&gt;
+  &lt;li class="list-inline-item"&gt;Nulla volutpat&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="descriptionList" class="mb-5">
+<h4>Description list</h4>
+<p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a .text-truncate class to truncate the text with an ellipsis.</p>
+<div class="card">
+<div class="card-body">
+<dl class="row">
+<dt class="col-sm-3">Description lists</dt>
+<dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+<dt class="col-sm-3">Euismod</dt>
+<dd class="col-sm-9">
+<p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+<p>Donec id elit non mi porta gravida at eget metus.</p>
+</dd>
+<dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+<dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+<dt class="col-sm-3">Nesting</dt>
+<dd class="col-sm-9">
+<dl class="row">
+<dt class="col-sm-4">Nested definition list</dt>
+<dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+</dl>
+</dd>
+</dl>
+</div>
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+<div class="hljs-container"><pre><code class="xml">&lt;dl class="row"&gt;
+  &lt;dt class="col-sm-3"&gt;Description lists&lt;/dt&gt;
+  &lt;dd class="col-sm-9"&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+  &lt;dt class="col-sm-3"&gt;Euismod&lt;/dt&gt;
+  &lt;dd class="col-sm-9"&gt;
+    &lt;p&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;/p&gt;
+    &lt;p&gt;Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt class="col-sm-3 text-truncate"&gt;Truncated term is truncated&lt;/dt&gt;
+  &lt;dd class="col-sm-9"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/dd&gt;
+  &lt;dt class="col-sm-3"&gt;Nesting&lt;/dt&gt;
+  &lt;dd class="col-sm-9"&gt;
+    &lt;dl class="row"&gt;
+      &lt;dt class="col-sm-4"&gt;Nested definition list&lt;/dt&gt;
+      &lt;dd class="col-sm-8"&gt;Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="col-xl-3">
+
+<nav id="sidebar-bootstrap" class="navbar navbar-sticky d-none d-xl-block">
+<nav class="nav">
+<a class="nav-link" href="#headings" data-toggle="scroll-to">Headings</a>
+<a class="nav-link" href="#displayHeadings" data-toggle="scroll-to">Display headings</a>
+<a class="nav-link" href="#lead" data-toggle="scroll-to">Lead</a>
+<a class="nav-link" href="#inlineTextElements" data-toggle="scroll-to">Inline text elements</a>
+<a class="nav-link" href="#abbreviations" data-toggle="scroll-to">Abbreviations</a>
+<a class="nav-link" href="#blockquotes" data-toggle="scroll-to">Blockquotes</a>
+<a class="nav-link" href="#unstyledList" data-toggle="scroll-to">Unstyled list</a>
+<a class="nav-link" href="#inlineList" data-toggle="scroll-to">Inline list</a>
+<a class="nav-link" href="#descriptionList" data-toggle="scroll-to">Description List</a>
+</nav>
+</nav>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+
+
+<div class="app-theme-panel">
+<div class="app-theme-panel-container">
+<a href="javascript:;" data-toggle="theme-panel-expand" class="app-theme-toggle-btn"><i class="bi bi-sliders"></i></a>
+<div class="app-theme-panel-content">
+<div class="small fw-bold text-white mb-1">Theme Color</div>
+<div class="card mb-3">
+
+<div class="card-body p-2">
+
+<div class="app-theme-list">
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-pink" data-theme-class="theme-pink" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Pink">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-red" data-theme-class="theme-red" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Red">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-warning" data-theme-class="theme-warning" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Orange">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-yellow" data-theme-class="theme-yellow" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Yellow">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-lime" data-theme-class="theme-lime" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Lime">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-green" data-theme-class="theme-green" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Green">&nbsp;</a></div>
+<div class="app-theme-list-item active"><a href="javascript:;" class="app-theme-list-link bg-teal" data-theme-class="" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Default">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-info" data-theme-class="theme-info" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cyan">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-primary" data-theme-class="theme-primary" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Blue">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-purple" data-theme-class="theme-purple" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Purple">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-indigo" data-theme-class="theme-indigo" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Indigo">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-gray-100" data-theme-class="theme-gray-200" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Gray">&nbsp;</a></div>
+</div>
+
+</div>
+
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+<div class="small fw-bold text-white mb-1">Theme Cover</div>
+<div class="card">
+
+<div class="card-body p-2">
+
+<div class="app-theme-cover">
+<div class="app-theme-cover-item active">
+<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-1.jpg);" data-theme-cover-class="" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Default">&nbsp;</a>
+</div>
+<div class="app-theme-cover-item">
+<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-2.jpg);" data-theme-cover-class="bg-cover-2" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 2">&nbsp;</a>
+</div>
+<div class="app-theme-cover-item">
+<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-3.jpg);" data-theme-cover-class="bg-cover-3" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 3">&nbsp;</a>
+</div>
+<div class="app-theme-cover-item">
+<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-4.jpg);" data-theme-cover-class="bg-cover-4" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 4">&nbsp;</a>
+</div>
+<div class="app-theme-cover-item">
+<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-5.jpg);" data-theme-cover-class="bg-cover-5" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 5">&nbsp;</a>
+</div>
+</div>
+
+</div>
+
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/vendor.min.js" type="be12a65b2ca0981ccaa31cc2-text/javascript"></script>
+<script src="assets/js/app.min.js" type="be12a65b2ca0981ccaa31cc2-text/javascript"></script>
+
+
+<script src="assets/plugins/%40highlightjs/cdn-assets/highlight.min.js" type="be12a65b2ca0981ccaa31cc2-text/javascript"></script>
+<script src="assets/js/demo/highlightjs.demo.js" type="be12a65b2ca0981ccaa31cc2-text/javascript"></script>
+<script src="assets/js/demo/sidebar-scrollspy.demo.js" type="be12a65b2ca0981ccaa31cc2-text/javascript"></script>
+
+<script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="be12a65b2ca0981ccaa31cc2-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"72ca3c991f6e3c94","version":"2022.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from seantheme.com/hud/ui_typography.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jul 2022 09:38:29 GMT -->
+</html>

@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from seantheme.com/hud/pos_counter_checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jul 2022 09:38:24 GMT -->
+<head>
+<meta charset="utf-8" />
+<title>HUD | POS - Counter Checkout System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+
+<link href="assets/css/vendor.min.css" rel="stylesheet" />
+<link href="assets/css/app.min.css" rel="stylesheet" />
+
+</head>
+<body class='pace-top'>
+
+<div id="app" class="app app-content-full-height app-without-sidebar app-without-header">
+
+<div id="content" class="app-content p-1 ps-xl-4 pe-xl-4 pt-xl-3 pb-xl-3">
+
+<div class="pos pos-vertical card" id="pos">
+
+<div class="pos-container card-body">
+
+<div class="pos-header">
+<div class="logo">
+<a href="pos_counter_checkout.html">
+<div class="logo-img"><i class="bi bi-x-diamond" style="font-size: 1.5rem;"></i></div>
+<div class="logo-text">Pine & Dine</div>
+</a>
+</div>
+<div class="time" id="time">00:00</div>
+<div class="nav">
+<div class="nav-item">
+<a href="pos_kitchen_order.html" class="nav-link">
+<i class="bi bi-bootstrap-reboot nav-icon"></i>
+</a>
+</div>
+<div class="nav-item">
+<a href="pos_table_booking.html" class="nav-link">
+<i class="bi bi-calendar-date nav-icon"></i>
+</a>
+</div>
+<div class="nav-item">
+<a href="pos_menu_stock.html" class="nav-link">
+<i class="bi bi-pie-chart nav-icon"></i>
+</a>
+</div>
+</div>
+</div>
+
+
+<div class="pos-content">
+<div class="pos">
+<div class="pos-container">
+
+<div class="pos-content h-100">
+<div class="pos-content-container p-3" data-scrollbar="true" data-height="100%">
+<div class="row gx-3">
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table in-use card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">1</div>
+<div class="text-white text-opacity-50">9 order</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">4 / 4</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">35:20</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">$318.20</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">Unpaid</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table in-use card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">2</div>
+<div class="text-white text-opacity-50">12 orders</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">6 / 8</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">12:69</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">$682.20</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">Unpaid</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">3</div>
+<div class="text-white text-opacity-50">max 6 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 6</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">4</div>
+<div class="text-white text-opacity-50">max 4 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 4</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">5</div>
+<div class="text-white text-opacity-50">max 4 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 4</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table in-use card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">6</div>
+<div class="text-white text-opacity-50">3 orders</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">3 / 6</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">20:52</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">$56.49</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">Unpaid</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table in-use card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">7</div>
+<div class="text-white text-opacity-50">6 orders</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">3 / 4</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">58:40</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">$329.02</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-success"></i></div>
+<div class="w-60px text-success">Paid</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table in-use card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">8</div>
+<div class="text-white text-opacity-50">0 orders</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">2 / 4</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">05:12</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">$329.02</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">Unpaid</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table in-use card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">9</div>
+<div class="text-white text-opacity-50">4 orders</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">2 / 4</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">52:58</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">$49.50</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">Unpaid</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table in-use card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">10</div>
+<div class="text-white text-opacity-50">12 orders</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">9 / 12</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">66:69</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">$768.24</div>
+</div>
+<div class="col-6 d-flex justify-content-center text-success">
+<div class="w-20px"><i class="bi bi-currency-dollar"></i></div>
+<div class="w-60px">Paid</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table disabled card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">11</div>
+<div class="text-white text-opacity-50">Reserved for Sean</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 4</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">12</div>
+<div class="text-white text-opacity-50">max 6 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 6</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">13</div>
+<div class="text-white text-opacity-50">max 6 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 6</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">14</div>
+<div class="text-white text-opacity-50">max 6 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 6</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">15</div>
+<div class="text-white text-opacity-50">max 6 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 6</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">16</div>
+<div class="text-white text-opacity-50">max 6 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 6</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">17</div>
+<div class="text-white text-opacity-50">max 6 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 6</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">18</div>
+<div class="text-white text-opacity-50">max 6 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 6</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">19</div>
+<div class="text-white text-opacity-50">max 6 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 6</div>
+</div>
+ <div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 pb-3">
+<div class="pos-checkout-table available card">
+<a href="#" class="pos-checkout-table-container" data-toggle="select-table">
+<div class="pos-checkout-table-header">
+<div class="status"><i class="bi bi-circle-fill"></i></div>
+<div class="fw-bold">Table</div>
+<div class="fw-bold display-6">20</div>
+<div class="text-white text-opacity-50">max 6 pax</div>
+</div>
+<div class="pos-checkout-table-info small">
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-people text-white text-opacity-50"></i></div>
+<div class="w-60px">0 / 6</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-clock text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+<div class="row">
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-receipt text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+<div class="col-6 d-flex justify-content-center">
+<div class="w-20px"><i class="bi bi-currency-dollar text-white text-opacity-50"></i></div>
+<div class="w-60px">-</div>
+</div>
+</div>
+</div>
+</a>
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="pos-sidebar" id="pos-sidebar">
+
+<div class="pos-sidebar-header">
+<div class="back-btn">
+<button type="button" data-toggle-class="pos-mobile-sidebar-toggled" data-toggle-target="#pos" class="btn">
+<i class="bi bi-chevron-left"></i>
+</button>
+</div>
+<div class="icon"><img src="https://seantheme.com/assets/img/pos/icon-table.svg" alt="" /></div>
+<div class="title">Table 01</div>
+<div class="order">Order: <b class="text-theme">#0000</b></div>
+</div>
+
+<hr class="m-0 opacity-3 text-white" />
+
+<div class="pos-sidebar-body" data-scrollbar="true" data-height="100%">
+
+<div class="pos-order py-3">
+<div class="pos-order-product">
+<div class="img w-40px h-40px" style="background-image: url(../assets/img/pos/product-2.html)"></div>
+<div class="flex-1">
+<div class="row">
+<div class="col-7">
+<div class="h6 mb-1">Grill Pork Chop</div>
+<div class="small">$12.99</div>
+<div class="small">- size: large</div>
+</div>
+<div class="col-2">x1</div>
+<div class="col-3 text-white fw-bold text-end">$12.99</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="pos-order py-3">
+<div class="pos-order-product">
+<div class="img w-40px h-40px" style="background-image: url(../assets/img/pos/product-8.html)"></div>
+<div class="flex-1">
+<div class="row">
+<div class="col-7">
+<div class="h6 mb-1">Orange Juice</div>
+<div class="small">$5.00</div>
+<div class="small">- size: large<br />- less ice</div>
+</div>
+<div class="col-2">x2</div>
+<div class="col-3 text-white fw-bold text-end">$10.00</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="pos-order py-3">
+<div class="pos-order-product">
+<div class="img w-40px h-40px" style="background-image: url(../assets/img/pos/product-13.html)"></div>
+<div class="flex-1">
+<div class="row">
+<div class="col-7">
+<div class="h6 mb-1">Vanilla Ice-cream</div>
+<div class="small">$3.99</div>
+<div class="small">- scoop: 1 <br />- flavour: vanilla</div>
+</div>
+<div class="col-2">x1</div>
+<div class="col-3 text-white fw-bold text-end">$3.99</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="pos-order py-3">
+<div class="pos-order-product">
+<div class="img w-40px h-40px" style="background-image: url(../assets/img/pos/product-1.html)"></div>
+<div class="flex-1">
+<div class="row">
+<div class="col-7">
+<div class="h6 mb-1">Grill chicken chop</div>
+<div class="small">$3.99</div>
+<div class="small">- size: large<br />- spicy: medium</div>
+</div>
+<div class="col-2">x1</div>
+<div class="col-3 text-white fw-bold text-end">$10.99</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="pos-order py-3">
+<div class="pos-order-product">
+<div class="img w-40px h-40px" style="background-image: url(../assets/img/pos/product-10.html)"></div>
+<div class="flex-1">
+<div class="row">
+<div class="col-7">
+<div class="h6 mb-1">Mushroom Soup</div>
+<div class="small">$3.99</div>
+<div class="small">- size: large<br />- more cheese</div>
+</div>
+<div class="col-2">x1</div>
+<div class="col-3 text-white fw-bold text-end">$3.99</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="pos-order py-3">
+<div class="pos-order-product">
+<div class="img w-40px h-40px" style="background-image: url(../assets/img/pos/product-5.html)"></div>
+<div class="flex-1">
+<div class="row">
+<div class="col-7">
+<div class="h6 mb-1">Hawaiian Pizza</div>
+<div class="small">$15.00</div>
+<div class="small">- size: large<br />- more onion</div>
+</div>
+<div class="col-2">x1</div>
+<div class="col-3 text-white fw-bold text-end">$15.00</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="pos-order py-3">
+<div class="pos-order-product">
+<div class="img w-40px h-40px" style="background-image: url(../assets/img/pos/product-15.html)"></div>
+<div class="flex-1">
+<div class="row">
+<div class="col-7">
+<div class="h6 mb-1">Perfect Yeast Doughnuts</div>
+<div class="small">$2.99</div>
+<div class="small">- size: 1 set<br />- flavour: random</div>
+</div>
+<div class="col-2">x1</div>
+<div class="col-3 text-white fw-bold text-end">$2.99</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="pos-order py-3">
+<div class="pos-order-product">
+<div class="img w-40px h-40px" style="background-image: url(../assets/img/pos/product-14.html)"></div>
+<div class="flex-1">
+<div class="row">
+<div class="col-7">
+<div class="h6 mb-1">Macarons</div>
+<div class="small">$4.99</div>
+<div class="small">- size: 1 set<br />- flavour: random</div>
+</div>
+<div class="col-2">x1</div>
+<div class="col-3 text-white fw-bold text-end">$4.99</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="pos-sidebar-footer">
+<div class="d-flex align-items-center mb-2">
+<div>Subtotal</div>
+<div class="flex-1 text-end h6 mb-0">$64.94</div>
+</div>
+<div class="d-flex align-items-center">
+<div>Taxes (6%)</div>
+<div class="flex-1 text-end h6 mb-0">$3.90</div>
+</div>
+<hr />
+<div class="d-flex align-items-center mb-2">
+<div>Total</div>
+<div class="flex-1 text-end h4 mb-0">$68.84</div>
+</div>
+<div class="mt-3">
+<div class="btn-group d-flex">
+<a href="#" class="btn btn-outline-default rounded-0 w-80px">
+<i class="bi bi-paypal fa-lg"></i><br />
+<span class="small">E-Wallet</span>
+</a>
+<a href="#" class="btn btn-outline-default rounded-0 w-80px">
+<i class="bi bi-credit-card fa-fw fa-lg"></i><br />
+<span class="small">Card</span>
+</a>
+<a href="#" class="btn btn-outline-theme rounded-0 w-150px">
+<i class="bi bi-wallet2 fa-lg"></i><br />
+<span class="small">Cash</span>
+</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="app-theme-panel">
+<div class="app-theme-panel-container">
+<a href="javascript:;" data-toggle="theme-panel-expand" class="app-theme-toggle-btn"><i class="bi bi-sliders"></i></a>
+<div class="app-theme-panel-content">
+<div class="small fw-bold text-white mb-1">Theme Color</div>
+<div class="card mb-3">
+
+<div class="card-body p-2">
+
+<div class="app-theme-list">
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-pink" data-theme-class="theme-pink" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Pink">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-red" data-theme-class="theme-red" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Red">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-warning" data-theme-class="theme-warning" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Orange">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-yellow" data-theme-class="theme-yellow" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Yellow">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-lime" data-theme-class="theme-lime" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Lime">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-green" data-theme-class="theme-green" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Green">&nbsp;</a></div>
+<div class="app-theme-list-item active"><a href="javascript:;" class="app-theme-list-link bg-teal" data-theme-class="" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Default">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-info" data-theme-class="theme-info" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cyan">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-primary" data-theme-class="theme-primary" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Blue">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-purple" data-theme-class="theme-purple" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Purple">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-indigo" data-theme-class="theme-indigo" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Indigo">&nbsp;</a></div>
+<div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-gray-100" data-theme-class="theme-gray-200" data-toggle="theme-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Gray">&nbsp;</a></div>
+</div>
+
+</div>
+
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+<div class="small fw-bold text-white mb-1">Theme Cover</div>
+<div class="card">
+
+<div class="card-body p-2">
+
+<div class="app-theme-cover">
+<div class="app-theme-cover-item active">
+<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-1.jpg);" data-theme-cover-class="" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Default">&nbsp;</a>
+</div>
+<div class="app-theme-cover-item">
+<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-2.jpg);" data-theme-cover-class="bg-cover-2" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 2">&nbsp;</a>
+</div>
+<div class="app-theme-cover-item">
+<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-3.jpg);" data-theme-cover-class="bg-cover-3" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 3">&nbsp;</a>
+</div>
+<div class="app-theme-cover-item">
+<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-4.jpg);" data-theme-cover-class="bg-cover-4" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 4">&nbsp;</a>
+</div>
+<div class="app-theme-cover-item">
+<a href="javascript:;" class="app-theme-cover-link" style="background-image: url(assets/img/cover/cover-thumb-5.jpg);" data-theme-cover-class="bg-cover-5" data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 5">&nbsp;</a>
+</div>
+</div>
+
+</div>
+
+
+<div class="card-arrow">
+<div class="card-arrow-top-left"></div>
+<div class="card-arrow-top-right"></div>
+<div class="card-arrow-bottom-left"></div>
+<div class="card-arrow-bottom-right"></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+
+</div>
+
+
+<script src="assets/js/vendor.min.js" type="a67c5e7fc0bc8c44599ba5f8-text/javascript"></script>
+<script src="assets/js/app.min.js" type="a67c5e7fc0bc8c44599ba5f8-text/javascript"></script>
+
+
+<script src="../assets/js/demo/pos-counter-checkout.demo.html" type="a67c5e7fc0bc8c44599ba5f8-text/javascript"></script>
+
+<script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="a67c5e7fc0bc8c44599ba5f8-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"72ca3c8a3b483c94","version":"2022.6.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from seantheme.com/hud/pos_counter_checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jul 2022 09:38:24 GMT -->
+</html>
